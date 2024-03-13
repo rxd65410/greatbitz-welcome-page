@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
+            background-color: #ffffff; /* White background */
         }
         .content {
             display: flex;
@@ -18,15 +18,11 @@
             align-items: center;
             height: 100vh;
         }
-        .logo {
-            width: 272px;
-            height: 92px;
-            margin-bottom: 30px;
-        }
         h1 {
             color: #1a73e8;
             font-size: 3em;
             margin-bottom: 10px;
+            animation: slideInLeft 1.5s ease-out;
         }
         p {
             color: #3c4043;
@@ -34,19 +30,25 @@
             margin-top: 20px;
             max-width: 400px;
             text-align: center;
+            animation: slideInRight 1.5s ease-out;
         }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #1a73e8;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
         }
-        .button:hover {
-            background-color: #0d47a1;
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
         }
     </style>
 </head>
