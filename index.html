@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Your Company Name</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,43 +19,41 @@
             height: 100vh;
         }
         h1 {
-            color: #1a73e8;
             font-size: 3em;
-            margin-bottom: 10px;
-            animation: slideInLeft 1.5s ease-out;
+            margin-bottom: 20px;
         }
         p {
-            color: #3c4043;
             font-size: 1.2em;
             margin-top: 20px;
             max-width: 400px;
             text-align: center;
-            animation: slideInRight 1.5s ease-out;
-        }
-
-        @keyframes slideInLeft {
-            from {
-                transform: translateX(-100%);
-            }
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes slideInRight {
-            from {
-                transform: translateX(100%);
-            }
-            to {
-                transform: translateX(0);
-            }
         }
     </style>
 </head>
 <body>
     <div class="content">
-        <h1>Coming Soon</h1>
-        <p>We're working hard to bring you something awesome. Stay tuned!</p>
+        <h1>Your Company Name</h1>
+        <p>Welcome to our website. More updates coming soon!</p>
     </div>
+    <script>
+        const fontFamilies = [
+            'Arial, sans-serif',
+            'Times New Roman, Times, serif',
+            'Courier New, Courier, monospace',
+            'Georgia, serif',
+            'Verdana, Geneva, sans-serif',
+            'Tahoma, Geneva, sans-serif',
+            'Roboto, sans-serif',
+            'Open Sans, sans-serif',
+            'Lato, sans-serif',
+            'Montserrat, sans-serif'
+        ];
+
+        const companyName = document.querySelector('h1');
+        for (let i = 0; i < fontFamilies.length; i++) {
+            companyName.style.fontFamily = fontFamilies[i];
+            document.body.appendChild(companyName.cloneNode(true));
+        }
+    </script>
 </body>
 </html>
