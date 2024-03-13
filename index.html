@@ -9,29 +9,36 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #f2f2f2;
+        }
+        .content {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
-        .content {
-            text-align: center;
+        .logo {
+            width: 272px;
+            height: 92px;
+            margin-bottom: 30px;
         }
         h1 {
-            color: #343a40;
+            color: #1a73e8;
             font-size: 3em;
             margin-bottom: 10px;
         }
         p {
-            color: #6c757d;
+            color: #3c4043;
             font-size: 1.2em;
             margin-top: 20px;
+            max-width: 400px;
+            text-align: center;
         }
         .button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #007bff;
+            background-color: #1a73e8;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
@@ -39,12 +46,13 @@
             transition: background-color 0.3s;
         }
         .button:hover {
-            background-color: #0056b3;
+            background-color: #0d47a1;
         }
     </style>
 </head>
 <body>
     <div class="content">
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google">
         <h1>Coming Soon</h1>
         <p>We're working hard to bring you something awesome. Stay tuned!</p>
         <a href="#" class="button">Subscribe</a>
